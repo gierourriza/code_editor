@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Code Editor</title>
+<link rel="stylesheet/less" type="text/css" media="screen" href="./assets/stylesheets/style.less" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/4.0.0/less.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div id="editor">function print1to20(){
+    //Codes here
+}
+    </div>
+   <div id="test_cases">
+       <h3>Test Cases(0/1)</h3>
+       <span> &#x2705 print1to20() to log 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20</span>
+   </div>
+
+   <div id="output_screen">
+        <h3>Output</h3>
+   </div>
+</div>
+    
+<script src="https://pagecdn.io/lib/ace/1.4.12/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/monokai");
+    editor.session.setMode("ace/mode/javascript");
+</script>
+</body>
+</html>
